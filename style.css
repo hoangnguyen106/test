@@ -1,21 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 .container {
     display: flex;
+    height: 1024px;
 }
 
 .navbar {
+    border: none;
+    flex: 1;
+    height: 44px;
+    width: 150px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
     display: block;
-    flex: 3;
-    background-color: #000;
+    background-color: #000; 
     color: white;
     border: solid 1px #fff;
     height: 100%;
 }
 
+
 .item {
-    padding: 5px 18px 5px;
+    width: 150px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 14px 19px;
+}
+
+.item:hover {
+    width: calc(150px - 38px);
+    cursor: pointer;
+    background-color: #5C5C5C;
+}
+
+.content {
+    width: 100%;
+    flex: 9;
+    padding-left: 129px;
+}
+
+
+
+.setImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    padding: 38px 296px 38px 296px;
+    margin-bottom: 40px;
+}
+
+.titleT {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+
+}
+
+.titleD {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-align: center;
+     width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.contentTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
 }
 
 .contentMid {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.contentLeftImg{
+    float: left;
+}
+.contentRight {
+    flex: 3;
+}
+
+.contentLeft {
+    flex: 3;
+}
+
+.contentM {
+    flex: 3;
+}
+
+
+.footer {
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+/* identical to box height */
+    color: #3E3E3E;
+
 }
